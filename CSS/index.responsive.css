@@ -1,0 +1,660 @@
+@media (max-width: 1300px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        min-height: 100vh;
+    }
+
+    header nav .links ul {
+        flex-direction: column;
+        row-gap: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        border-radius: 10px;
+        transform: translate(-50%);
+        overflow: hidden;
+        height: 0px;
+        transition-duration: 1s;
+    }
+
+    header nav .links .button:focus+ul {
+        height: 350px;
+        padding: 20px;
+
+    }
+
+    header nav .links .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 8px;
+        width: 55px;
+        height: 45px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    header nav .links .button span {
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    header nav .head-line h2 a {
+        font-size: 25px;
+    }
+
+    header .container {
+        width: 90%;
+        padding: 20px 0px;
+    }
+
+    header .container .content h1 {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+
+    header .container .content p {
+        font-size: 30px
+    }
+
+    header .container .content button {
+        width: 100px;
+        height: 40px;
+    }
+
+    #About .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    #About .container .box {
+        width: 100%;
+    }
+
+    #About .container .box h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    #About .container .box p {
+        margin-top: 10px;
+    }
+
+    #About .container .box img {
+        margin-top: 20px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 0px;
+    }
+
+    #Services .container .content .box {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+
+    #Services .container .content .box:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
+
+    #Services .container .content .box .part1,
+    #Services .container .content .box .part2 {
+        width: 100%;
+    }
+
+    #Clients .container {
+        width: 95%;
+    }
+
+    #Clients .boxes .item {
+        width: 100%;
+    }
+
+    #Clients .container .boxes .item:first-child {
+        margin-bottom: 30px;
+    }
+
+    #Clients .boxes .item .box {
+        margin: 0px 0px;
+    }
+
+    #Clients .container .boxes .item .box p {
+        margin: 30px 0px;
+    }
+
+    #Trainers .container .boxes .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #Trainers .container .boxes .item .box {
+        width: 280px;
+        margin: auto;
+    }
+
+    #Trainers .container .boxes .item .box .content p {
+        width: 75%;
+    }
+
+    #Gallery .container .images {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 300px);
+        width: 280px;
+        margin: auto;
+    }
+
+    #Gallery .container .images .image:first-child {
+        grid-row: 1/span 2;
+    }
+
+    #Gallery .container .images .image:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 7/8;
+    }
+
+    #Gallery .container .images .image:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+
+    #Gallery .container .images .image:nth-of-type(5) {
+        grid-column: 1;
+    }
+
+    #Gallery .container .images .image:nth-of-type(6) {
+        grid-column: 1;
+        grid-row: 5/7;
+    }
+    #Contact .container .info{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    #Contact .container .info .col{
+        width: 100%;
+        row-gap: 0px;
+    }
+    #Contact .container form{
+        flex-direction: column;
+    }
+    #Contact .container form .input:nth-child(-n+3){
+        width: 100%;
+}
+    footer .container{
+        flex-direction: column;
+        margin-bottom: 10px;
+        row-gap: 30px;
+    }
+    footer .container .col{
+        width: 100%;
+    
+    }
+    footer .container .col .posts{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 20px;
+}
+    footer .container .col .image{
+        width: 100%;
+}   
+    footer .container .col .image img{
+        width: 100%;
+        border-radius: 10px;
+}
+    footer .container .col .times .row{
+        width: 90%;
+        margin: auto;
+
+}
+    footer .container .col .times .row .col{
+        font-size: 13px;
+    }
+    footer .footer p{
+        line-height: 1.5;
+        padding: 0px 20px;
+}
+    footer .footer .icons i{
+        width: 35px;
+        height: 35px;
+}
+
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    header nav .head-line h2 a {
+        font-size: 30px;
+    }
+
+    header .container {
+        width: 95%;
+        padding: 0px 0px;
+    }
+
+    header .container .content h1 {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    header .container .content p {
+        font-size: 35px;
+    }
+
+    #About .container .box h2 {
+        font-size: 30px;
+    }
+
+    #Services .container .boxes .box .icon {
+        width: 90px;
+        height: 80px;
+        font-size: 30px;
+        transform: translate(20px, -15px);
+    }
+
+    #Services .container .boxes .box:nth-of-type(2) .icon {
+        transform: translate(-20px, -15px)
+    }
+
+    #Clients .container {
+        width: 80%;
+    }
+
+    #Clients .container .boxes .item .box p {
+        font-weight: lighter;
+    }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+
+    header nav .head-line h2 a {
+        font-size: 40px;
+    }
+
+    header .container {
+        width: 90%;
+        padding: 0px 40px;
+    }
+
+    header .container .content h1 {
+        font-size: 40px;
+    }
+
+    header .container .content p {
+        font-size: 45px;
+    }
+
+    #About .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+
+    #Services .container .content .box p {
+        font-size: 18px;
+    }
+
+    #Services .container .content .box h2 {
+        font-size: 18px;
+    }
+
+    #Services .container .content .box .part2 {
+        width: 15%;
+    }
+
+    #Services .container .content .box .part2 i {
+        width: 150px;
+        height: 110px;
+        font-size: 30px;
+    }
+
+
+    #Clients .container .boxes .item .box p {
+        width: 65%;
+    }
+
+    #Gallery .container .images {
+        width: 60%;
+        margin: auto;
+    }
+    footer .container .col .posts{
+        flex-direction: row;
+    }
+    footer .container .col .image{
+        width: calc(100%/3);
+}
+    footer .container .col .image img{
+        width: 80%;
+        border-radius: 5px;
+}
+    footer .container .col .times .row{
+        width: 80%;
+        margin: initial;
+
+}
+    footer .container .col .times .row .col{
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    header .container {
+        transform: translateY(80%);
+    }
+
+    header .container .content h1 {
+        font-size: 50px;
+    }
+
+    /* #About .container{
+        flex-wrap: nowrap;
+    }
+    #About .container .content{
+        width: 80%;
+    }
+    */
+    #About .container .box {
+        width: 50%;
+    }
+
+    #About .container .box h2 {
+        font-size: 33px;
+    }
+
+    #Services .container .content .box {
+        flex-direction: row;
+    }
+
+    #Services .container .content .box:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+
+    #Services .container .content .box .part1 {
+        width: 85%;
+    }
+
+    #Services .container .content .box:nth-of-type(2) .part1 {
+        padding-left: 60px;
+    }
+
+    #Clients .boxes .item {
+        width: 50%;
+    }
+
+    #Clients .boxes .item .box {
+        margin: 0px 10px;
+        line-height: 40px;
+    }
+
+    #Clients .container .boxes .item .box p {
+        line-height: 25px;
+        margin: 10px 0px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #Clients .boxes .item .box h3 {
+        font-size: 25px;
+    }
+
+    #Clients .boxes .item .box .image {
+        width: 90px;
+        height: 90px;
+    }
+
+    #Trainers .container .title {
+        margin-bottom: 20px;
+    }
+
+    #Trainers .container .boxes .item {
+        width: 50%;
+    }
+
+    #Trainers .container .boxes .item:nth-of-type(1),
+    #Trainers .container .boxes .item:nth-of-type(2) {
+        margin-bottom: 50px;
+    }
+
+    #Gallery .container .images {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        width: 100%;
+        margin: auto;
+    }
+
+    #Gallery .container .images .image:first-child {
+        background-image: url("../images/g1-9345a8f7.jpg");
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+    }
+
+    #Gallery .container .images .image:nth-of-type(2) {
+        background-image: url("../images/g2-9aae0bfa.jpg");
+        grid-column: 1/span 1;
+        grid-row: 3/span 1;
+    }
+
+    #Gallery .container .images .image:nth-of-type(3) {
+        background-image: url("../images/g3-1f7cace9.jpg");
+        grid-column: 3/span 1;
+        grid-row: 2/span 1;
+    }
+
+    #Gallery .container .images .image:nth-of-type(4) {
+        background-image: url("../images/g4-9fc39936.jpg");
+        grid-column: 3/span 1;
+        grid-row: 1/2;
+    }
+
+    #Gallery .container .images .image:nth-of-type(5) {
+        background-image: url("../images/g5-8ce27a04.jpg");
+        grid-column: 2/3;
+        grid-row: 1/span;
+    }
+
+    #Gallery .container .images .image:nth-of-type(6) {
+        background-image: url("../images/g6-64027e43.jpg");
+        grid-column: 2/span 1;
+        grid-row: 2/span 2;
+    }
+
+    #Gallery .container .images .image:nth-of-type(7) {
+        background-image: url("../images/g7-9ead7675.jpg");
+        grid-column: 3/span 1;
+        grid-row-start: 3/span 1;
+    }
+    #Contact .container .info{
+        flex-direction: row;
+        row-gap: 0px;
+    }
+    #Contact .container .info .col{
+    width: 33.33%;
+    row-gap: 5px;
+}
+    #Contact .container form{
+        flex-direction: row;
+    }
+    #Contact .container form .input:nth-child(-n+3){
+        width: calc(100%/3);
+}
+    footer .container .col .image img{
+        width: 70%;
+        border-radius: 5px;
+}
+    footer .container .col .times .row{
+        width: 60%;
+        margin: initial;
+
+}
+    footer .container .col .times .row .col{
+        font-size: 13px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    header .container {
+        transform: translateY(100%);
+    }
+
+    header .container .content h1 {
+        font-size: 50px;
+    }
+
+    header nav .links .button {
+        display: none;
+    }
+
+    header nav .links ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        column-gap: 15px;
+        height: auto;
+        row-gap: 0px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        left: 0%;
+        border-radius: 0px;
+        transform: translate(0%);
+        overflow: hidden;
+        transition-duration: 0s;
+    }
+
+    #About .container {
+        width: 90%;
+    }
+
+    #About .container .box h2 {
+        font-family: 40px;
+    }
+
+    #About .container .box p {
+        margin-top: 25px;
+        font-size: 19px;
+        font-weight: lighter;
+        word-spacing: 2px;
+        line-height: 30px;
+    }
+
+    #About .container .box img {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    #Services .container .boxes .box .content h2 {
+        font-size: 25px;
+    }
+
+    #Services .container .boxes .box .content p {
+        font-size: 19px;
+    }
+
+    #Services .container .content .box .part2 i {
+        height: 130px;
+        font-size: 50px;
+    }
+
+    #Clients .container .boxes .item .box p {
+        width: 85%;
+    }
+
+    #Clients .boxes .item .box .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Trainers .container .boxes .item {
+        width: 25%;
+    }
+
+    #Trainers .container .boxes .item {
+        margin-bottom: 50px;
+    }
+
+    #Trainers .container .boxes .item .box {
+        width: initial;
+        margin-inline: 10px;
+    }
+
+    #Trainers .container .boxes .item .box .content h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    #Trainers .container .boxes .item .box .content p {
+        width: 100%;
+    }
+    footer .container{
+        flex-direction: row;
+        margin-bottom: 10px;
+        row-gap: 0px;
+    }
+    footer .container .col{
+        width: calc(100%/3);
+    }
+    footer .container .col .posts{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 20px;
+}
+    footer .container .col .image{
+        width: calc(100%/3);
+}   
+    footer .container .col .image img{
+        width: 80%;
+        border-radius: 5px;
+}
+    footer .container .col .times .row{
+        width: 100%;
+        margin: auto;
+
+}
+    footer .container .col .times .row .col{
+        font-size: 13px;
+    }
+    footer .footer p{
+        line-height: 1.5;
+        padding: 0px 20px;
+}
+    footer .footer .icons i{
+        width: 35px;
+        height: 35px;
+}
+
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}
