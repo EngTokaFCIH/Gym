@@ -1,3 +1,4 @@
+/* *---------------------------------------------header--------------------------------------------------- */
 header{
     height: 100vh;
     background-image: url("../images/b1-09d842f2.jpg");
@@ -7,6 +8,7 @@ header{
     /* to make container move to header not body */
     position: relative;
 }
+/* *---------------------------------------------nav--------------------------------------------------- */
 header nav{
     z-index: 1000;
     width: 90%;
@@ -17,14 +19,17 @@ header nav{
     padding: 15px 0px;
     position: relative;
 }
+/* navbar-brand */
 header nav .head-line h2 a{
     font-size: 45px;
     font-weight: 200px;
     letter-spacing: 2px;
 }
+/* burger button */
 header nav .links .button{
     display: none;
 }
+/* links of nav */
 header nav .links ul{
     display: flex;
     flex-direction: row;
@@ -49,28 +54,33 @@ header nav .links ul li a::after{
 }
 header nav .links ul li a.active::after,
 header nav .links ul li:hover a::after{
-    opacity: 1;
-}
+    opacity: 1;}
+/* *-------------------------------------------------end nav---------------------------------------------- */
+/* container of header */
 header .container{
     width: 90%;
     padding:0px 40px ;
     margin: auto;
-    transform: translateY(50%);
-    color:var(--bg-color)
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:var(--bg-color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 header .container .content h1{
     font-size: 60px;
     font-weight: 500px;
     margin-bottom: 15px;
     letter-spacing: 2px;
-
 }
 header .container .content p{
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: bolder;
     letter-spacing: 2px;
-
+    
 }
 header .container .content button{
     width: 120px;
@@ -85,6 +95,8 @@ header .container .content button{
 header .container .content button:hover{
     background-color: transparent;
 }
+/* *--------------------------------------------end container--------------------------------------------- */
+/* *--------------------------------------------About----------------------------------------------------- */
 #About .container{
     padding: 20px 0px;
     display: flex;
@@ -112,117 +124,6 @@ header .container .content button:hover{
     margin: auto;
     display: block;    
 }
-/* #Services{
-    background-color: var(--main-color);
-}
-#Services .container h2{
-    color: var(--bg-color);
-}
-#Services .container .title{
-    padding: 50px 0px;
-    text-align: center;
-}
-#Services .container .title h2{
-    font-size: 40px;
-}
-#Services .container .boxes{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-#Services .container .boxes .box{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-#Services .container .boxes .box .content.content{
-    width: 80%;
-}
-#Services .container .boxes .box .content.content:not(:nth-of-type(2)){
-    margin:0px 40px;
-}
-#Services .container .boxes .box .content.content:nth-of-type(2){
-    margin-left: 40px;
-}
-
-
-#Services .container .boxes .box .content p{
-    margin: 20px 0px;
-    font-size: 14px;
-}
-
-#Services .container .boxes .box .content button{
-    width: 130px;
-    height: 50px;
-    color: var(--bg-color);
-    background-color: black;
-    border: 3px solid var(--main-color);
-    transition-duration: 0.5s;  
-}
-#Services .container .boxes .box .content button:hover{
-    background-color: rgba(255,255,255,0.5);
-}
-#Services .container .boxes .box .icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#Services .container .boxes .box .icon{
-    margin: auto;
-}
-#Services .container .boxes .box .icon i{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--main-color);
-    font-size: 30px;
-    border: 1px solid black;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Services{
     background-color: var(--main-color);
 }
@@ -298,46 +199,14 @@ header .container .content button:hover{
     color: var(--main-color);
     font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* *----------------------------------------------end About----------------------------------------------- */
+/* *----------------------------------------------Clients------------------------------------------------- */
 #Clients .boxes{
     display: flex;
     justify-content: space-between;
     text-align: center;
     flex-wrap: wrap;
+    padding: 25px 0px;
 }
 #Clients .boxes .item {
     width: 50%;
@@ -368,41 +237,8 @@ header .container .content button:hover{
     height: 100%;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* *------------------------------------------------end Clients-------------------------------------------- */
+/* *------------------------------------------------Trainers----------------------------------------------- */
 #Trainers{
     background-color: var(--main-color);
 }
@@ -490,44 +326,8 @@ header .container .content button:hover{
     color: var(--main-color);
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-iframe{
-    width: 100%;
-    height: 400px;
-    margin-block: 3rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* *----------------------------------------------end Trainers--------------------------------------------- */
+/* *----------------------------------------------Gallery--------------------------------------------- */
 #Gallery .container .images{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -575,41 +375,13 @@ iframe{
     grid-column: 3/span 1;
     grid-row-start: 3/span 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* *----------------------------------------------end Gallery--------------------------------------------- */
+/* *----------------------------------------------Contact--------------------------------------------- */
+#Contact iframe{
+    width: 100%;
+    height: 400px;
+    margin-block: 3rem;
+}
 #Contact .container .info{
     display: flex;
     justify-content: space-evenly;
@@ -672,10 +444,6 @@ iframe{
      width: 100%;
      padding: 10px;
     }
-/* #Contact .container form .input input,
-#Contact .container form .input textarea{
-    border: none;
-} */
 #Contact .container form .input input:focus,
 #Contact .container form .input textarea:focus{
     border-bottom-color:transparent ;
@@ -702,56 +470,17 @@ iframe{
     background-color: var(--main-color);
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* *------------------------------------------------end Contact-------------------------------------------- */
+/* *------------------------------------------------Footer-------------------------------------------- */
 footer{
     background-color: #333333;
     padding: 40px 0px;
 }
-
 footer .container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 footer .container .col{
     width: calc(100%/3);
@@ -804,7 +533,6 @@ footer .container .col .times .row{
     justify-content: space-between;
     border-bottom: 2px solid var(--main-color);
 }
-
 footer .container .col .times .row .col{
     color: var(--bg-color);
     margin-bottom: 3px;
@@ -845,6 +573,7 @@ footer .footer .icons i:hover{
     background-color: #fff;
     color: var(--main-color);
 }
+/* *---------------------------------------------------end Footer------------------------------------------ */
 .up{
     position: fixed;
     bottom: 10px;
