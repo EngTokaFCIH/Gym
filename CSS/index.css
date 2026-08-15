@@ -1,5 +1,15 @@
+/* *in header section to make container be centered in x-axis 
+    *header{
+    *    display: flex;
+    *    justify-content: center;
+    *}
+    *but the nav also will be beside to his brother (container) in the same line because (display:flex)
+    *so to prevent this we will up nav on a new layer so just container will affected with (display: flex; justify-content: center;)
+ */
 /* *---------------------------------------------header--------------------------------------------------- */
 header{
+    display: flex;
+    justify-content: center;
     height: 100vh;
     background-image: url("../images/b1-09d842f2.jpg");
     background-position: center;
@@ -10,14 +20,16 @@ header{
 }
 /* *---------------------------------------------nav--------------------------------------------------- */
 header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
     z-index: 1000;
-    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 15px 0px;
-    position: relative;
 }
 /* navbar-brand */
 header nav .head-line h2 a{
@@ -120,16 +132,18 @@ header .container .content button:hover{
     font-weight: lighter;
 }
 #About .container .box img{
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: block;    
 }
+/* *----------------------------------------------end About----------------------------------------------- */
+/* *----------------------------------------------Services----------------------------------------------- */
 #Services{
     background-color: var(--main-color);
 }
 #Services .title{
     color: var(--bg-color);
-
+    
 }
 #Services .container .content{
     display: flex;
@@ -154,7 +168,7 @@ header .container .content button:hover{
 }
 #Services .container .content .box .part1{
     width: 80%;
-
+    
 }
 #Services .container .content .box .part1 h3{
     color: #fff;
@@ -199,14 +213,14 @@ header .container .content button:hover{
     color: var(--main-color);
     font-size: 30px;
 }
-/* *----------------------------------------------end About----------------------------------------------- */
+/* *----------------------------------------------end Services----------------------------------------------- */
 /* *----------------------------------------------Clients------------------------------------------------- */
 #Clients .boxes{
     display: flex;
     justify-content: space-between;
     text-align: center;
     flex-wrap: wrap;
-    padding: 25px 0px;
+    padding: 20px 0px;
 }
 #Clients .boxes .item {
     width: 50%;
@@ -471,94 +485,99 @@ header .container .content button:hover{
     color: #fff;
 }
 /* *------------------------------------------------end Contact-------------------------------------------- */
-/* *------------------------------------------------Footer-------------------------------------------- */
-footer{
+.footer{
     background-color: #333333;
-    padding: 40px 0px;
+    padding: 15px 0px;
 }
-footer .container{
+.footer .container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 3px;
 }
-footer .container .col{
+.footer .container .col{
     width: calc(100%/3);
 }
-footer .container .col h4{
+.footer .container .col h4{
     color: var(--main-color);
     margin-bottom: 20px;
     font-size: 20px;
 }
-footer .container .col .links{
+.footer .container .col .links{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     row-gap: 15px;
 }
-footer .container .col .links a{
+.footer .container .col .links a{
     transition-duration: 0.5s;
     font-size: 15px;
 }
-footer .container .col .links a:hover{
+.footer .container .col .links a:hover{
     color: var(--main-color);
 }
 
-footer .container .col .posts{
+.footer .container .col .posts{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 15px;
 }
-footer .container .col .image{
+.footer .container .col .image{
     width: calc(100%/3);
 }
-footer .container .col .image img{
+.footer .container .col .image img{
     display: block;
     width: 60%;
     border-radius: 5px;
 }
-footer .container .col .times{
+.footer .container .col .times{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     margin-bottom: 30px;
 }
-footer .container .col .times .row{
+.footer .container .col .times .row{
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid var(--main-color);
 }
-footer .container .col .times .row .col{
+.footer .container .col .times .row .col{
     color: var(--bg-color);
     margin-bottom: 3px;
     width: max-content;
 }
-footer .footer{
+/* *------------------------------------------------Footer-------------------------------------------- */
+footer {
+    background-color: #333333;
     border-top: 1px solid var(--bg-color);
     text-align: center;
     color: var(--bg-color);
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-footer .footer p{
+footer  p{
     margin-top: 25px;
     font-size: 15px;
 
 }
-footer .footer p span{
+footer  p span{
     color: var(--main-color);
 }
-footer .footer .icons{
+footer  .icons{
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
 }
-footer .footer .icons i{
+footer  .icons i{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,7 +588,7 @@ footer .footer .icons i{
     border-radius: 50%;
     transition-duration: 0.5s;
 }
-footer .footer .icons i:hover{
+footer  .icons i:hover{
     background-color: #fff;
     color: var(--main-color);
 }
